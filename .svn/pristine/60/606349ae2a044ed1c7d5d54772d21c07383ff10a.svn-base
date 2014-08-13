@@ -1,0 +1,7 @@
+
+<div id="messages">
+	<div class="msgbutton">
+    	<a href="edit_profil">Edit Profil Anda</a>
+        <a href="logout">Logout Dari Aplikasi</a>
+    </div><!--msgbutton-->
+</div>

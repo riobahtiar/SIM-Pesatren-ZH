@@ -1,0 +1,39 @@
+<!--menu-->
+<div class="navbar navbar-inverse navbar-fixed-top menu-atas">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="icon-bar">test</span>
+            <span class="icon-bar">dua</span>
+            <span class="icon-bar">tiga</span>
+          </button>
+          <a href="#" class="navbar-brand">&nbsp;<span class="fa fa-home pad"></span>&nbsp;</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#about">Tentang Website</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Santri Baru <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Pendaftaran</a></li>
+                <li><a href="#">Lengkapi Data Pendaftaran</a></li>
+                <li><a href="#">Konfirmasi Pembayaran</a></li>
+                <li><a href="#">Syarat dan Ketentuan</a></li>
+                <li><a href="#">Alur Pendaftaran</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pendaftaran Santri Baru</li>
+                
+              </ul>
+            </li>
+            
+          
+            <li><a href="#">Jadwal Penting</a></li>
+            <li><a href="#">Wali Santri</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+<!--menu-end-->

@@ -1,0 +1,278 @@
+@charset "utf-8";
+body{
+	background-color:#193d5b;
+}
+.bg-footer {
+	background-color: #122d43;
+	border-top-width: medium;
+	border-top-color: #F60;
+}
+#border-orange-bawah {
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #F60;
+}
+.form-log {
+	width:320px;
+	height:150px;
+	background-color:#222222;
+	}
+.help-me{
+	font-size: x-small;
+	font-style: italic;
+	color: #999;
+	margin-top:5px;
+	margin-bottom:3px;
+}
+.help-me:hover {
+	font-weight: lighter;
+	color: #F00;
+}
+.bg-conten {
+	background-color:#093;
+    max-height:400px;
+}
+.bg-sidebar {
+	background-color:#036;
+	height:400px;
+
+}
+.panel-head1{
+	height: 77px;
+	/* IE10 Consumer Preview */ 
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #428BCA 0%, #FFFFFF 80%, #428BCA 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #428BCA 0%, #FFFFFF 80%, #428BCA 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #428BCA 0%, #FFFFFF 80%, #428BCA 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #428BCA), color-stop(0.8, #FFFFFF), color-stop(1, #428BCA));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #428BCA 0%, #FFFFFF 80%, #428BCA 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #428BCA 0%, #FFFFFF 80%, #428BCA 100%);
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color: #F60;
+}
+.col-1{
+	height:300px;
+	border-radius:0px;
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #428BCA 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #428BCA 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #428BCA 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #428BCA));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #428BCA 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #428BCA 100%);
+
+}
+.panel-conten-home{
+		border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color:#F00;
+
+}
+
+.head-top {
+	
+	width:auto;
+}
+.custom-menu-color {
+	-webkit-box-shadow: 0px 0px 30px rgba(255, 102, 0, 1);
+-moz-box-shadow:    0px 0px 30px rgba(255, 102, 0, 1);
+box-shadow:         0px 0px 30px rgba(255, 102, 0, 1);
+}
+.container-bg{
+	background-color: #eefbf1;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	border-radius: 5px;
+	border: thin solid #f60;
+	-webkit-box-shadow: 0px 0px 30px rgba(255, 102, 0, 1);
+	-moz-box-shadow: 0px 0px 30px rgba(255, 102, 0, 1);
+	box-shadow: 0px 0px 30px rgba(255, 102, 0, 1);
+}
+.bg-slider-caption{
+	background-color:#000;
+	opacity:0.8;
+	width:640px;
+
+}
+.rio-header {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: lighter;
+	color: #0287EA;
+}
+.labelq {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #428bca;
+	font-weight: bolder;
+	font-size: 12px;
+	max-width:100%;
+	display:block;
+}
+.warning-ie {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+	background-color: #F00;
+	padding: 8px;
+	border: medium outset #000;
+	height: auto;
+	width: 350px;
+	margin-top: 250px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.gambar-headerku {
+	margin-top: 67px;
+	margin-bottom: 23px;
+
+}
+.banner1{
+	max-width:1129px;
+	min-width:200px;
+	
+}
+.custom-font-widget2 {
+	font-family: "Comic Sans MS", cursive;
+	font-weight: lighter;
+}
+.container {
+	width: 1200px !important;
+	min-width:1200px !important;
+	max-width: 1200px !important;
+}
+
+/* tambahan bootstrap*/
+/*
+ * Callout for 2.3.2 docs
+ *
+ * Only appears below page headers (not on the homepage). The homepage gets its
+ * own link with the masthead links.
+ */
+
+.bs-old-docs {
+  padding: 15px 20px;
+  color: #777;
+  background-color: #fafafa;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.bs-old-docs strong {
+  color: #555;
+}
+/*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks reading the docs.
+ * Requires a base and modifier class.
+ */
+
+/* Common styles for all types */
+.bs-callout {
+	border-left: 5px solid #eee;
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-bottom: 4px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 30px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+/* Variations */
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bs-callout-a {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #C0D8ED;
+  border-color: #428BCA;
+}
+.bs-callout-info:hover {
+background-color: #FFF0E6;
+  border-color: #FF6600;
+}
+.label-pengumuman {
+	background-color: #428BCA;
+	border-radius:0px;
+}
+.label-pengumuman-samping {
+	background-color: #FF6600;
+	border-radius:0px;
+}
+
+/* end of tambahan bootstrap*/
+.menu-s{
+	height: 200px;
+	vertical-align:
+}
+.pad {
+	color: #F30;
+	font-weight: lighter;
+}
+.pad:hover {
+	color: #FFF;
+	font-weight: bolder;
+	font-size: medium;
+}
+.menu-atas {
+	-webkit-box-shadow: 0px 0px 30px rgba(255, 102, 0, 1);
+	-moz-box-shadow: 0px 0px 30px rgba(255, 102, 0, 1);
+	box-shadow: 0px 0px 30px rgba(255, 102, 0, 1);
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #f60;
+	border-right-color: #f60;
+	border-bottom-color: #f60;
+	border-left-color: #f60;
+	background-image: url(../img/gg.png);
+	background-repeat: repeat-x;
+}
+.fok > a:hover {
+	color: #000;
+}

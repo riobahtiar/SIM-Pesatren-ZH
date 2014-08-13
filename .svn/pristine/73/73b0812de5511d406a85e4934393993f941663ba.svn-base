@@ -1,0 +1,67 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/*  
+ *  ----------| User License Agrement For This Software |----------
+ *  - Software ini bersifat Gratis dan dapat digunakan untuk kepentingan Edukasi/Umum
+ *  - Dilarang Mengkomersialkan Aplikasi ini tanpa izin tertulis dari author Software
+ *  - Diperbolehkan Merubah Code/Design dari Aplikasi ini
+ *  - Penggunaan dan Pendistribusian Software ini wajib mencantumkan file: license.txt
+ *  - Author tidak bertanggung jawab atas resiko yang diakibatkan dari penggunaan software ini
+ *  - Author dibebaskan dari segala tuntutan yang diakibatkan oleh penggunaan software ini
+ *     
+ *
+ *     Copyright (c) 2013, Rio Bahtiar
+ *     http://www.rio.my.id | akhibahtiar@gmail.com | lang: id(INDONESIA)
+ *     DILARANG MENGHAPUS KOMENTAR LISENSI INI
+ *  ----------| Copyright 2013 Author & EllisLab, Inc. |----------
+ */
+
+class Home extends CI_Controller
+{
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->model('home_m');
+    }
+
+    function index()
+    {
+        $data['homes'] = $this->home_m->get_pengumuman();
+        $data['links_sch'] = $this->home_m->get_links_sch();
+        $data['links_pt'] = $this->home_m->get_links_pt();
+
+
+            $page=$this->uri->segment(2);
+            $limit=2;
+            if(!$page):
+            $offset = 0;
+            else:
+            $offset = $page;
+            endif;
+            
+            $d['tot'] = $offset;
+            $tot_hal = $this->db->query("select * pengumuman");
+            $config['base_url'] = base_url();
+            $config['total_rows'] = $tot_hal->num_rows();
+            $config['per_page'] = $limit;
+            $config['uri_segment'] = 2;
+            $config['first_link'] = 'Awal';
+            $config['last_link'] = 'Akhir';
+            $config['next_link'] = 'Selanjutnya';
+            $config['prev_link'] = 'Sebelumnya';
+            $this->pagination->initialize($config);
+            $data["paginator"] =$this->pagination->create_links();
+
+
+
+        $this->load->view('home/header');
+        $this->load->view('home/menu');
+        $this->load->view('home/konten', $data);
+        $this->load->view('home/footer',$data);
+    }
+
+
+}
+
+/* End of file home.php */
+/* Location: ./application/controllers/home.php */

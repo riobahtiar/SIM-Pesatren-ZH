@@ -1,0 +1,59 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/*  
+ *  ----------| User License Agrement For This Software |----------
+ *  - Software ini bersifat Gratis dan dapat digunakan untuk kepentingan Edukasi/Umum
+ *  - Dilarang Mengkomersialkan Aplikasi ini tanpa izin tertulis dari author Software
+ *  - Diperbolehkan Merubah Code/Design dari Aplikasi ini
+ *  - Penggunaan dan Pendistribusian Software ini wajib mencantumkan file: license.txt
+ *  - Author tidak bertanggung jawab atas resiko yang diakibatkan dari penggunaan software ini
+ *  - Author dibebaskan dari segala tuntutan yang diakibatkan oleh penggunaan software ini
+ *     
+ *
+ *     Copyright (c) 2013, Rio Bahtiar
+ *     http://www.rio.my.id | akhibahtiar@gmail.com | lang: id(INDONESIA)
+ *     DILARANG MENGHAPUS KOMENTAR LISENSI INI
+ *  ----------| Copyright 2013 Author & EllisLab, Inc. |----------
+ */
+
+class Home extends CI_Controller
+{
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->model('home_m');
+    }
+
+    function index()
+    {
+        $data['homes'] = $this->home_m->get_pengumuman();
+        $data['links_sch'] = $this->home_m->get_links_sch();
+        $data['links_pt'] = $this->home_m->get_links_pt();
+        
+         
+
+        $jml = $this->db->get('pengumuman');
+        $config['base_url'] = 'http://localhost/index.php/home/';
+        $config['total_rows'] = $jml->num_rows();
+        $config['per_page'] = 3;
+        $config['first_page'] = 'Awal';
+        $config['last_page'] = 'Akhir';
+        $config['next_page'] = 'Selanjutnya';
+        $config['prev_page'] = 'Sebelumnya';
+        $this->pagination->initialize($config);
+         
+        //buat pagination
+        $data['halaman'] = $this->pagination->create_links();
+         
+
+        $this->load->view('home/header');
+        $this->load->view('home/menu');
+        $this->load->view('home/konten', $data);
+        $this->load->view('home/footer',$data);
+    }
+
+
+}
+
+/* End of file home.php */
+/* Location: ./application/controllers/home.php */
